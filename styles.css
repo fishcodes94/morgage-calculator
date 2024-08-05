@@ -1,0 +1,312 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+#container label {
+  font-size: 0.8em;
+  color: #2471a3;
+}
+
+#calculator-card {
+  background-color: white;
+  display: flex;
+  border-radius: 20px;
+  width: 45em;
+  padding-left: 0.4em;
+  height: auto;
+  align-items: center;
+}
+
+#title {
+  margin-right: 2em;
+  font-weight: 900;
+}
+
+#title-container {
+  display: flex;
+  justify-content: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#mortgage-term,
+#interest-rate {
+  width: 11em;
+  padding: 0.4em;
+  margin-top: 0.4em;
+}
+
+#mortgage-amount {
+  width: 23.2em;
+  padding: 0.4em;
+  margin-bottom: -1.3em;
+}
+
+#mortgage-interest-container {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+label {
+  margin-bottom: 0.5em;
+}
+
+#interest-only-div,
+#interest-only {
+  margin-bottom: 0.5em;
+  border: 1px solid gray;
+  margin-top: 0.5em;
+  padding: 0.4em;
+  padding-left: 8px;
+}
+#repayment-div,
+#interest-only-div {
+  width: 19.34em;
+  border-radius: 5px;
+}
+
+#repayment-div,
+#repayment {
+  border: 1px solid gray;
+  padding: 0.4em;
+  margin-top: 0.3em;
+  padding-right: 2px;
+}
+
+#calculate-repayments-btn {
+  width: 14em;
+  border-radius: 20px;
+  padding: 1em;
+  margin-top: 2em;
+  border: none;
+  background-color: #52be80;
+  cursor: pointer;
+}
+
+#term-interest-container,
+#title-container {
+  padding: 1em;
+}
+
+#morgage-amount-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+#clear-button {
+  border: none;
+  background-color: white;
+  margin-left: 3em;
+  margin-top: 0.2em;
+  cursor: pointer;
+  text-decoration: underline;
+  color: gray;
+}
+
+#label {
+  margin-bottom: 3em;
+}
+
+#image {
+  font-size: 6em;
+  color: #52be80;
+}
+
+#results-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  background-color: #34495e;
+  margin-left: 2em;
+
+  width: 100%;
+  height: 27em;
+}
+
+#image-span {
+  margin-bottom: 1em;
+}
+
+#results-area span {
+  color: white;
+}
+
+#instructions {
+  margin: 1em;
+  padding: 0;
+  margin-top: 1em;
+  color: #7fb3d5;
+}
+
+.all-results {
+  display: flex;
+  position: relative;
+  top: -58px;
+  flex-direction: column;
+  text-align: left;
+  margin: 1.3em;
+  color: #a9cce3;
+  margin-top: 7em;
+}
+
+.all-results h2 {
+  color: white;
+}
+
+.all-results p {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+.payment-result-container {
+  border: 1px solid black;
+  margin-top: 1em;
+  padding: 1.5em;
+  background-color: #154360;
+  border: none;
+  border-radius: 20px;
+}
+
+#payment-title {
+  margin-bottom: 0.2em;
+}
+
+.num1 {
+  font-size: 2.5em;
+}
+
+.num2 {
+  font-size: 1.5em;
+}
+
+#total-repayment-title {
+  margin-bottom: 0.5em;
+}
+
+.payment-result-container > #monthly-repayment-number {
+  color: #52be80;
+}
+
+@media only screen and (max-width: 760px) {
+  #calculator-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-size: 1.4em;
+  }
+
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+  }
+
+  #clear-button {
+    border: none;
+    background-color: white;
+    text-align: left;
+    margin-top: 0.2em;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  #results-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #34495e;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding-top: 1.2em;
+    margin-right: 3em;
+    padding: 2em;
+    width: 100%;
+  }
+
+  #instructions {
+    width: 100%;
+    font-size: 1em;
+    margin-left: 1em;
+  }
+
+  #mortgage-interest-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: -1.5em;
+  }
+
+  #mortgage-interest-container input {
+    width: 100%;
+    padding: 1.2em;
+    font-size: large;
+  }
+
+  #morgage-amount-container input {
+    width: 100%;
+    padding: 1.2em;
+    font-size: large;
+  }
+
+  #calculate-repayments-btn {
+    width: 14em;
+    border-radius: 30px;
+    padding: 1em;
+    border: none;
+    background-color: #52be80;
+    cursor: pointer;
+    font-size: 1em;
+    margin: auto;
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+
+  #title-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #title {
+    margin-right: 1em;
+    margin-bottom: 0.3em;
+    font-size: 1.5em;
+  }
+
+  #clear-button {
+    border: none;
+    background-color: white;
+
+    margin-top: 0.2em;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: -0em;
+    font-size: 0.9em;
+  }
+}

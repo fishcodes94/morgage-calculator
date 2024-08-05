@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morgage Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/570d8b7e98.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="calculator-card">
+        <div id="mortgage-calculator">
+          <form id="mortgage-form" action="">
+            <div id="title-container">
+              <span id="title">Mortgage Calculator</span>
+              <button id="clear-button">Clear All</button>
+            </div>
+
+            <div id="morgage-amount-container">
+              <label for="morgage-amount">Mortgage Amount</label>
+              <input type="text" name="mortgage-amount" id="mortgage-amount" />
+            </div>
+            <div id="term-interest-container">
+              <div id="mortgage-interest-container">
+                <div id="morgage-term-container">
+                  <label for="mortgage-term">Mortgage Term</label>
+                  <br />
+                  <input type="text" name="mortgage-term" id="mortgage-term" />
+                </div>
+                <div id="interest-rate-container">
+                  <label for="interest-rate">Interest Rate</label>
+                  <br />
+                  <input type="text" name="interest-rate" id="interest-rate" />
+                </div>
+                <br />
+              </div>
+
+              <label for="mortgage-type">Mortgage Type</label>
+              <div id="repayment-div">
+                <input type="radio" name="mortgage-type" id="repayment" />
+                Repayment
+              </div>
+              <div id="interest-only-div">
+                <input type="radio" name="mortgage-type" id="interest-only" />
+                Interest Only
+              </div>
+
+              <button type="submit" id="calculate-repayments-btn">
+                <span> <i class="fa-solid fa-calculator"></i></span>
+                Calculate Repayments
+              </button>
+            </div>
+          </form>
+        </div>
+        <div id="results-area">
+          <div id="results-content">
+            <div id="image-span">
+              <i id="image" class="fa-solid fa-calculator"></i>
+            </div>
+            <span>Results shown here</span>
+            <p id="instructions">
+              Complete the form and click "calculate repayments" to see what
+              your monthly repayments would be
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
